@@ -1,0 +1,136 @@
+.course-selection-container {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.course-selection-content {
+  padding: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.course-selection-content h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.enrolled-summary {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.enrolled-summary p {
+  color: #666;
+  font-size: 16px;
+}
+
+.enrolled-summary strong {
+  color: #667eea;
+}
+
+.course-selection-content h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.selection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.selection-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.selection-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.selection-header h3 {
+  color: #667eea;
+  font-size: 20px;
+}
+
+.credits {
+  background: #667eea;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.selection-card h4 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.selection-info {
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+.selection-info p {
+  color: #666;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.enroll-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.enroll-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.enroll-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .course-selection-content {
+    padding: 20px;
+  }
+
+  .course-selection-content h1 {
+    font-size: 24px;
+  }
+
+  .enrolled-summary {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .selection-grid {
+    grid-template-columns: 1fr;
+  }
+}
