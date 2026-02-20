@@ -17,7 +17,7 @@ import AssignFaculty from './components/Admin/AssignFaculty';
 import ViewRegistrations from './components/Admin/ViewRegistrations';
 
 // Import data
-import { coursesData, studentsData, adminData } from './data/coursesData';
+import { coursesData, studentsData } from './data/coursesData';
 
 function App() {
   const [user, setUser] = useState(null);
